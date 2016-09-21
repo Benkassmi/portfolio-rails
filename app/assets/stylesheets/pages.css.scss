@@ -8,6 +8,7 @@ body {
 
 .header .name {
   font-family: 'Roboto', sans-serif;
+  color: #000066;
 }
 
 .header .container {
@@ -18,12 +19,17 @@ body {
   padding: 20px 0 0 0
 }
 
-.header .nav-pills li {
+.header .nav-pills li a {
   margin-right: 15px;
   padding: 5px 10px;
-  border: 1px solid black;
+  border: 1px solid #000066;
   border-radius: 3px;
   background-color: #E5E5E5;
+  color: #000066;
+  &:hover {
+    background-color: #000066;
+    color: white;
+  }
 }
 
 .main {
@@ -42,9 +48,18 @@ body {
   font-weight: 300;
 }
 
-.main .btn {
+.welcome a {
   float: right;
   padding: 10px 20px;
+  border: 1px solid #000066;
+  border-radius: 3px;
+  background-color: #E5E5E5;
+  color: #000066;
+  text-decoration: none;
+  &:hover {
+    background-color: #000066;
+    color: white;
+  }
 }
 
 .footer {
@@ -62,13 +77,15 @@ body {
 }
 
 .slider {
-  height: 300px;
+  height: 500px;
 }
 
 .slider img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+  display: block;
+	max-height: 100%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .unslider-arrow {
@@ -93,4 +110,14 @@ body {
 .unslider-arrow.prev {
 
   transform: rotate(-180deg);
+}
+
+.supporting .app-info {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.supporting img {
+  width: auto;
+  height: 300px;
 }
